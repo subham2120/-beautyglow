@@ -1,7 +1,7 @@
 
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
-import Services from "./sections/services";
+import Services from "./sections/Services";
 import Gallery from "./sections/Gallery";
 import Pricing from "./sections/Pricing";
 import Reviews from "./sections/Reviews";
