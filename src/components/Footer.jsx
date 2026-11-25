@@ -1,12 +1,18 @@
 
+import { Sparkles, ArrowUp } from "lucide-react";
+import {
+  SiInstagram,
+  SiFacebook
+} from "@icons-pack/react-simple-icons";
+
 export default function Footer() {
   return (
     <footer className="footer">
-
       <div className="footer-main">
 
         <div className="footer-brand">
           <a href="#home" className="logo">
+            <Sparkles size={23} />
             BeautyGlow<span>.</span>
           </a>
 
@@ -16,12 +22,16 @@ export default function Footer() {
           </p>
 
           <div className="social-links">
-            <a href="https://instagram.com/" target="_blank" rel="noreferrer">
-              Instagram
+            <a href="https://instagram.com/"
+               target="_blank" rel="noreferrer"
+               aria-label="Instagram">
+              <SiInstagram />
             </a>
 
-            <a href="https://facebook.com/" target="_blank" rel="noreferrer">
-              Facebook
+            <a href="https://facebook.com/"
+               target="_blank" rel="noreferrer"
+               aria-label="Facebook">
+              <SiFacebook />
             </a>
           </div>
         </div>
@@ -51,9 +61,10 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} BeautyGlow. All rights reserved.</p>
-        <a href="#home" className="back-top">Back to Top ↑</a>
+        <a href="#home" className="back-top">
+          Back to Top <ArrowUp size={16} />
+        </a>
       </div>
-
     </footer>
   );
 }

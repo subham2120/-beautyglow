@@ -1141,23 +1141,35 @@ body {
   margin: 20px 0;
 }
 
+
 .social-links {
   display: flex;
-  gap: 12px;
+  gap: 14px;
+  margin-top: 20px;
 }
 
 .social-links a {
+  width: 42px;
+  height: 42px;
   color: white;
   background: #594047;
-  padding: 10px;
   border-radius: 50%;
   display: flex;
-  transition: .3s;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.social-links a svg {
+  width: 20px;
+  height: 20px;
 }
 
 .social-links a:hover {
   background: #b64e65;
+  transform: translateY(-5px);
 }
+
 
 .social-links svg {
   width: 19px;
